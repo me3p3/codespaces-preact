@@ -1,26 +1,26 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/universal:1",
   "hostRequirements": {
-    "cpus": 4
+    "cpus": 1
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "npm run dev"
+    "server": "npm dev"
   },
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "src/index.jsx"
+        "dir/index.jsx"
       ]
     }
   },
   "portsAttributes": {
-    "5173": {
+    "mp3audio": {
       "label": "Application",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openzip"
     }
   },
-  "forwardPorts": [5173]
+  "forwardPorts": [mp3audio]
 }
